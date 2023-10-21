@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+    <center><h1>Subject Schedule</h1></center>
+    <link type="text/css" rel="stylesheet" href="style.css"
+</head> 
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    
+                    <div>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject">
+                    </div>
+                    <div>
+                        <label for="day">Day</label>
+                        <input type="date" id="day" name="day">
+                        <input type="text" name="day" id="day">
+                    </div>
+                    <div>
+                        <label for="time">Time</label>
+                        <input type="time" id="appt" name="appt">
+                        <input type="text" name="time" id="time">
+
+                    </div>
+                    <div>
+                        <label for="room">Room</label>
+                        <input type="text" name="room" id="room">
+                    </div>
+                    <div>
+                        <label for="instructor">Instructor</label>
+                        <input type="text" name="instructor" id="instructor">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Day</th>
+                                <th>Time</th>
+                                <th>Room</th>
+                                <th>Instructor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
